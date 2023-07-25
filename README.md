@@ -1,6 +1,12 @@
+Overview
+--------
+The purpose of this project is to simplify deploying Apache guacamole through Netskope Private Access. This configuration will create a docker based guacamole deployment to be used with a SAML identity provider for user authentication and authorization. The below steps assume that Netskope private access is already configured and a publisher is already deployed which will be leveraged to publish Guacamole as a browser based application.
+
+Once deployed, groups and membership can be used to authorize which connections users are allowed to access. These groups are passed to guacamole from the SAML assertion in the group attribute. In the guacamole configuration the administrator only needs to create Groups and assign connections to groups. When the user logs in for the first time the user will automatically be granted access to connections assigned to the group they are a member of. 
+
 Prerequisites
 -------------
-* An Ubuntu Linux VM with docker and docker-composed pre-installed
+* An Ubuntu Linux 20.04 LTS VM with docker and docker-composed pre-installed
 * Netskope Private access publisher deployed and configured
 * A browser based app configured for the guacamole VM host port 8433
 * Netskope private access Reverse Proxy idP SAML Configuration
