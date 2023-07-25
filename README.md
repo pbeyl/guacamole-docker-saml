@@ -8,10 +8,16 @@ Prerequisites
 
 Config Steps
 -----
-Copy guacamole-docker-saml.tar.gz to Ubuntu VM home folder and extract
+Copy guacamole-docker-saml.tar.gz to Ubuntu VM home folder and extract or git clone from repo
 ```
 # tar -zxvf guacamole-docker-saml.tar.gz
 # cd guacamole-docker-saml
+
+OR
+
+# git clone https://github.com/pbeyl/guacamole-docker-saml.git
+# cd guacamole-docker-saml
+
 ```
 
 Run the configuration script and capture all the required information
